@@ -7,6 +7,51 @@ Options -Indexes
 	Options -MultiViews
 </IfModule>
 
+# Specific redirections
+RewriteRule ^index\.html$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/ [L,R=301]
+RewriteCond %{QUERY_STRING} ^olsPage=cart$
+RewriteRule ^online-store$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/online-store_olsPage-cart [L,R=301,QSD]
+RewriteRule ^ticket-bookings-%26-events$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/ticket-bookings---events [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} ^path=$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/aaj_path- [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/aaj_path-_hermes [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes/bosnacweb05$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/aaj_path-_hermes_bosnacweb05 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes/bosnacweb05/bosnacweb05bd$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/aaj_path-_hermes_bosnacweb05_bosnacweb05bd [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/aaj_path-_hermes_bosnacweb05_bosnacweb05bd_b2756 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756/ipg\.nigeriansinnovascoti$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/aaj_path-_hermes_bosnacweb05_bosnacweb05bd_b2756_ipg_nigeriansinnovascoti [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756/ipg\.nigeriansinnovascoti/wb_nigeriansinnovascotia\.org/hex_configgrab$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/hex_configgrab [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756/ipg\.nigeriansinnovascoti/wb_nigeriansinnovascotia\.org/hex_sym404$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/hex_sym404 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756/ipg\.nigeriansinnovascoti/wb_nigeriansinnovascotia\.org/viewer$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/viewer [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756/ipg\.nigeriansinnovascoti/wb_nigeriansinnovascotia\.org/wp$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/wp [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^C=M;O=A$
+RewriteRule ^hex_sym404$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/hex_sym404/C-M-O-A [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^C=N;O=D$
+RewriteRule ^hex_sym404$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/hex_sym404/C-N-O-D [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^C=S;O=A$
+RewriteRule ^hex_sym404$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/hex_sym404/C-S-O-A [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/aaj.php/path- [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/aaj.php/path-_hermes [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes/bosnacweb05$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/aaj.php/path-_hermes_bosnacweb05 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes/bosnacweb05/bosnacweb05bd$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/aaj.php/path-_hermes_bosnacweb05_bosnacweb05bd [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/aaj.php/path-_hermes_bosnacweb05_bosnacweb05bd_b2756 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756/ipg\.nigeriansinnovascoti$
+RewriteRule ^aaj\.php$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/aaj.php/path-_hermes_bosnacweb05_bosnacweb05bd_b2756_ipg_nigeriansinnovascoti [L,R=301,QSD]
+
 # Create pretty URLs
 DirectorySlash Off
 
@@ -20,12 +65,6 @@ RewriteRule ^(.*)/$ $1 [NC,L,R=301]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 # End: Create pretty URLs
-
-# Specific redirections
-RewriteRule ^index\.html$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/ [L,R=301]
-RewriteCond %{QUERY_STRING} ^olsPage=cart$
-RewriteRule ^online-store$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/online-store_olsPage-cart [L,R=301,QSD]
-RewriteRule ^ticket-bookings-%26-events$ /scraping/files/live/nigeriansinnovascotia.org_kengimel_gmail.com_rxcvbgytgx/ticket-bookings---events [L,R=301,QSD]
 
 # Redirect all extensions to html
 RewriteCond %{QUERY_STRING} ^$

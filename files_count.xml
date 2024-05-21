@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <pagescount>
-	<html_total>23</html_total>
-	<html_done>20</html_done>
-	<images>452</images>
-	<script>14</script>
-	<css/>
-	<pdf>1</pdf>
+	<html_total>81</html_total>
+	<html_done>81</html_done>
+	<images>663</images>
+	<script>165</script>
+	<css>9</css>
+	<pdf>3</pdf>
 	<documents/>
 	<excel/>
 	<powerpoint/>
@@ -17,8 +17,8 @@
 	<txt/>
 	<autocad/>
 	<model_3d/>
-	<fonts>10</fonts>
-	<scraping_reload>1</scraping_reload>
+	<fonts>28</fonts>
+	<scraping_reload>4</scraping_reload>
 	<is_pretty_url>true</is_pretty_url>
 	<has_trailing_slash>false</has_trailing_slash>
 	<is_ebn>false</is_ebn>
@@ -32,6 +32,6 @@
 	<front_page_code_date>20230609120406</front_page_code_date>
 	<total_urls_from_api/>
 	<max_reached_live>false</max_reached_live>
-	<scrape_other_captures>false</scrape_other_captures>
-	<total_size>6468</total_size>
+	<scrape_other_captures>search_ended</scrape_other_captures>
+	<total_size>38636</total_size>
 </pagescount>

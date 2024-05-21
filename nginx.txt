@@ -1,17 +1,25 @@
-
-# Redirect all extensions to html
-if ($is_args = ''){
-	rewrite ^([^.]*)\.shtml$ $1.html permanent;
-	rewrite ^([^.]*)\.phtml$ $1.html permanent;
-	rewrite ^([^.]*)\.jhtml$ $1.html permanent;
-	rewrite ^([^.]*)\.htm$ $1.html permanent;
-	rewrite ^([^.]*)\.php$ $1.html permanent;
-	rewrite ^([^.]*)\.aspx$ $1.html permanent;
-	rewrite ^([^.]*)\.asp$ $1.html permanent;
-	rewrite ^([^.]*)\.jsp$ $1.html permanent;
-	rewrite ^([^.]*)\.apk$ $1.html permanent;
-}
-# End: Redirect all extensions to html
+# Specific redirections
+if ($args ~* ^olsPage=cart$){ rewrite ^/online-store$ /online-store_olsPage-cart? permanent; }
+rewrite ^/ticket-bookings-%26-events$ /ticket-bookings---events? permanent;
+if ($args ~* ^path=$){ rewrite ^/aaj\.php$ /aaj_path-? permanent; }
+if ($args ~* ^path=/hermes$){ rewrite ^/aaj\.php$ /aaj_path-_hermes? permanent; }
+if ($args ~* ^path=/hermes/bosnacweb05$){ rewrite ^/aaj\.php$ /aaj_path-_hermes_bosnacweb05? permanent; }
+if ($args ~* ^path=/hermes/bosnacweb05/bosnacweb05bd$){ rewrite ^/aaj\.php$ /aaj_path-_hermes_bosnacweb05_bosnacweb05bd? permanent; }
+if ($args ~* ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756$){ rewrite ^/aaj\.php$ /aaj_path-_hermes_bosnacweb05_bosnacweb05bd_b2756? permanent; }
+if ($args ~* ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756/ipg\.nigeriansinnovascoti$){ rewrite ^/aaj\.php$ /aaj_path-_hermes_bosnacweb05_bosnacweb05bd_b2756_ipg_nigeriansinnovascoti? permanent; }
+if ($args ~* ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756/ipg\.nigeriansinnovascoti/wb_nigeriansinnovascotia\.org/hex_configgrab$){ rewrite ^/aaj\.php$ /hex_configgrab? permanent; }
+if ($args ~* ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756/ipg\.nigeriansinnovascoti/wb_nigeriansinnovascotia\.org/hex_sym404$){ rewrite ^/aaj\.php$ /hex_sym404? permanent; }
+if ($args ~* ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756/ipg\.nigeriansinnovascoti/wb_nigeriansinnovascotia\.org/viewer$){ rewrite ^/aaj\.php$ /viewer? permanent; }
+if ($args ~* ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756/ipg\.nigeriansinnovascoti/wb_nigeriansinnovascotia\.org/wp$){ rewrite ^/aaj\.php$ /wp? permanent; }
+if ($args ~* ^C=M;O=A$){ rewrite ^/hex_sym404$ /hex_sym404/C-M-O-A? permanent; }
+if ($args ~* ^C=N;O=D$){ rewrite ^/hex_sym404$ /hex_sym404/C-N-O-D? permanent; }
+if ($args ~* ^C=S;O=A$){ rewrite ^/hex_sym404$ /hex_sym404/C-S-O-A? permanent; }
+if ($args ~* ^path=$){ rewrite ^/aaj\.php$ /aaj.php/path-? permanent; }
+if ($args ~* ^path=/hermes$){ rewrite ^/aaj\.php$ /aaj.php/path-_hermes? permanent; }
+if ($args ~* ^path=/hermes/bosnacweb05$){ rewrite ^/aaj\.php$ /aaj.php/path-_hermes_bosnacweb05? permanent; }
+if ($args ~* ^path=/hermes/bosnacweb05/bosnacweb05bd$){ rewrite ^/aaj\.php$ /aaj.php/path-_hermes_bosnacweb05_bosnacweb05bd? permanent; }
+if ($args ~* ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756$){ rewrite ^/aaj\.php$ /aaj.php/path-_hermes_bosnacweb05_bosnacweb05bd_b2756? permanent; }
+if ($args ~* ^path=/hermes/bosnacweb05/bosnacweb05bd/b2756/ipg\.nigeriansinnovascoti$){ rewrite ^/aaj\.php$ /aaj.php/path-_hermes_bosnacweb05_bosnacweb05bd_b2756_ipg_nigeriansinnovascoti? permanent; }
 
 # Create pretty URLs
 rewrite ^/([^/]+)$ /$1.html last;
@@ -26,6 +34,16 @@ rewrite ^/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+
 rewrite ^/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)$ /$1/$2/$3/$4/$5/$6/$7/$8/$9/$10.html last;
 # End: Create pretty URLs
 
-# Specific redirections
-if ($args ~* ^olsPage=cart$){ rewrite ^/online-store$ /online-store_olsPage-cart? permanent; }
-rewrite ^/ticket-bookings-%26-events$ /ticket-bookings---events? permanent;
+# Redirect all extensions to html
+if ($is_args = ''){
+	rewrite ^([^.]*)\.shtml$ $1.html permanent;
+	rewrite ^([^.]*)\.phtml$ $1.html permanent;
+	rewrite ^([^.]*)\.jhtml$ $1.html permanent;
+	rewrite ^([^.]*)\.htm$ $1.html permanent;
+	rewrite ^([^.]*)\.php$ $1.html permanent;
+	rewrite ^([^.]*)\.aspx$ $1.html permanent;
+	rewrite ^([^.]*)\.asp$ $1.html permanent;
+	rewrite ^([^.]*)\.jsp$ $1.html permanent;
+	rewrite ^([^.]*)\.apk$ $1.html permanent;
+}
+# End: Redirect all extensions to html
