@@ -28,6 +28,38 @@
         .gallery img:hover {
             transform: scale(1.05);
         }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .picture-card {
+            position: relative;
+            text-align: center;
+            width: 45%;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .picture-card img {
+            width: 100%;
+            height: auto;
+        }
+        .caption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-size: 1.2em;
+            padding: 10px 0;
+            text-align: center;
+        }
     </style>
 
 
@@ -46,7 +78,7 @@
         </h1>
         </p>
     </div>
-    <div class="gallery">
+    <!-- <div class="gallery">
         <img src="/gala_night2024/gala6.jpg" alt="Image 1">
         <p><h4>
             President of the Association of Nigerians in Nova Scotia, Azuka Onwuka, welcoming the Speaker of the Nova Scotia House of Assembly, the Honourable Danielle Barkhouse
@@ -56,6 +88,20 @@
         <p><h4>
             R-L: The Hon. Twila Grosse, Minister of Public Service Commission and African Nova Scotian Affairs, and MLA for Preston who represented Premier Tim Houston of Nova Scotia; Nnenna Azuka-Onwuka, project management expert; and Carolina Aviles Carolina Aviles, Special Advisor to the Minister
         </h4></p>
+    </div> -->
+    <div class="container">
+        <!-- First Picture -->
+        <div class="picture-card">
+            <img src="h/gala_night2024/gala6.jpg" alt="Picture 6">
+            <div class="caption">President of the Association of Nigerians in Nova Scotia, Azuka Onwuka, welcoming the Speaker of the Nova Scotia House of Assembly, the Honourable Danielle Barkhouse
+            </div>
+        </div>
+        <!-- Second Picture -->
+        <div class="picture-card">
+            <img src="/gala_night2024/gala7.jpg" alt="Picture 7">
+            <div class="caption">R-L: The Hon. Twila Grosse, Minister of Public Service Commission and African Nova Scotian Affairs, and MLA for Preston who represented Premier Tim Houston of Nova Scotia; Nnenna Azuka-Onwuka, project management expert; and Carolina Aviles Carolina Aviles, Special Advisor to the Minister
+            </div>
+        </div>
     </div>
     <div class="gallery">
      
